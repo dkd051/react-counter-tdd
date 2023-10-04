@@ -13,6 +13,9 @@ function App() {
               <button data-testid="minus-button" onClick={() => setCounter((counter) => counter - 1)}>-</button>
               <button data-testid="plus-button" onClick={() => setCounter((counter) => counter + 1)}>+</button>
           </div>
+          <div>
+              <button data-testid="on/off-button" style={{ backgroundColor: 'blue' }}>on/off</button>
+          </div>
       </header>
     </div>
   );
