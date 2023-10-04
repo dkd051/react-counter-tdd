@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# 리액트 카운터 TDD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+간단한 카운터 기능과 카운터 on/off 버튼을 학습하며 TDD 방식으로 테스트 코드 작성
 
 ## Available Scripts
 
