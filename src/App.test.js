@@ -8,3 +8,17 @@ test('the counter starts at 0', () => {
   // id가 counter인 엘리먼트의 텍스트가 0인지 테스트
   expect(counterElement).toHaveTextContent(0);
 });
+
+test('minus button has correct text', () => {
+  render(<App />);
+  // screen object를 이용해서 원하는 엘리먼트에 접근(접근할 때 ID로)
+  const minusButtonElement = screen.getByTestId('minus-button');
+  expect(minusButtonElement).toHaveTextContent('-');
+});
+
+test('plus button has correct text', () => {
+  render(<App />);
+  // screen object를 이용해서 원하는 엘리먼트에 접근(접근할 때 ID로)
+  const plusButtonElement = screen.getByTestId('plus-button');
+  expect(plusButtonElement).toHaveTextContent('+');
+});
